@@ -113,6 +113,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/app/src/test/java/com/m/jacococovarage/TestClass.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/build.gradle">
           <value>
             <set />
@@ -134,6 +139,11 @@
           </value>
         </entry>
         <entry key="$USER_HOME$/StudioProjects/VFHU-Android/app/build/outputs/code_coverage/stubFlavorDebugAndroidTest/connected/coverage.ec">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/VFHU-Android/app/build/reports/jacoco/jacocoTestReport/jacocoTestReport.xml">
           <value>
             <set />
           </value>

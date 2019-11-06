@@ -33,10 +33,5 @@ class ExampleUnitTest {
         Assert.assertEquals(mainActivity.add(), 10)
     }
 
-    @Test
-    fun addition_Hello_isCorrect() {
-        val mainActivity = Hello()
-        Assert.assertEquals(mainActivity.sum(), 100)
-    }
 
 }

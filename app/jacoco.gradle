@@ -50,18 +50,19 @@ task jacocoTestReport(type: JacocoReport, dependsOn:  ['testDebugUnitTest','crea
 
 sonarqube {
     properties {
+        //remove line 1 2 3 4 to converge all langauage
         property "sonar.projectName", "jacocoSample"
         property "sonar.projectKey", "jacocoSample"
         property "sonar.login", "3f03f727d5de9e6cbc368c4fbb19d24a48f85c91"
         property "sonar.projectVersion", "1.0"
         property "sonar.exclusions", "build/**,**/*.png,*.iml, **/*generated*,robospice/**/*"
         property "sonar.host.url", "http://localhost:9000"
-        property "sonar.language", "kotlin"
+        property "sonar.language", "kotlin"//4
         property "sonar.sources", "src/main/java"
-        property "sonar.binaries", "build/intermediates/classes/debug"
-        property "sonar.java.binaries", "build/intermediates/classes/debug"
+        property "sonar.binaries", "build/intermediates/classes/debug" //1
+        property "sonar.java.binaries", "build/intermediates/classes/debug"//2
         property "sonar.tests", "src/test/java, src/androidTest/java"
-        property "sonar.java.test.binaries", "build/intermediates/classes/debug"
+        property "sonar.java.test.binaries", "build/intermediates/classes/debug"//3
 
         def unit = fileTree(dir: project.projectDir, includes: ['**/*.exec']).files;
         def ui = fileTree(dir: project.projectDir, includes: ['**/*.ec']).files;
